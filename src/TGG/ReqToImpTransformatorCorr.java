@@ -6,7 +6,6 @@ import org.apache.log4j.BasicConfigurator;
 import org.moflon.tgg.algorithm.synchronization.SynchronizationHelper;
 
 import ReqToImpTransformator.ReqToImpTransformatorPackage;
-import ReqToImpTransformator.org.moflon.tie.CustomILPConstraintProvider;
 import ReqToImpTransformator.org.moflon.tie.CustomILPObjectiveProvider;
 import ReqToImpTransformator.org.moflon.tie.ReqToImpTransformatorConsistencyCheck;
 
@@ -24,7 +23,7 @@ public class ReqToImpTransformatorCorr extends SynchronizationHelper {
         helper.loadSrc("Models/"+srcPath.getName());
 		helper.loadTrg("Models/"+trgPath.getName());
 
-		helper.setUserDefiendILPConstraintProvider(new CustomILPConstraintProvider());
+		helper.setUserDefiendILPConstraintProvider(new CorrILPConstraintProvider());
 		helper.setUserDefiendILPObjectiveProvider(new CustomILPObjectiveProvider());
 		helper.createCorrespondences(true);
 		
