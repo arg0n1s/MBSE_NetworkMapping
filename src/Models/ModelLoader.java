@@ -75,7 +75,7 @@ public class ModelLoader {
 				modelFiles.remove(implMapped);
 				String path = models.get(current).getFile().getCanonicalPath();
 				saveGraphAsPNG(path.substring(0, path.length()-4)+".png",models.get(current));
-				saveGraphAsPNG(path.substring(0, path.length()-4)+".svg",models.get(current));
+				saveGraphAsSVG(path.substring(0, path.length()-4)+".svg",models.get(current));
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

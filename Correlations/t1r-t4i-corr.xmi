@@ -17,7 +17,11 @@
     <target href="t1r-t4i-impl.xmi#//@devices.1"/>
   </correspondences>
   <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
-    <source href="t1r-t4i-req.xmi#//@agents.5"/>
+    <source href="t1r-t4i-req.xmi#//@agents.4"/>
+    <target href="t1r-t4i-impl.xmi#//@devices.0"/>
+  </correspondences>
+  <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
+    <source href="t1r-t4i-req.xmi#//@agents.2"/>
     <target href="t1r-t4i-impl.xmi#//@devices.1"/>
   </correspondences>
   <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
@@ -25,16 +29,12 @@
     <target href="t1r-t4i-impl.xmi#//@devices.1"/>
   </correspondences>
   <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
-    <source href="t1r-t4i-req.xmi#//@agents.4"/>
-    <target href="t1r-t4i-impl.xmi#//@devices.0"/>
+    <source href="t1r-t4i-req.xmi#//@agents.5"/>
+    <target href="t1r-t4i-impl.xmi#//@devices.1"/>
   </correspondences>
   <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
     <source href="t1r-t4i-req.xmi#//@agents.1"/>
     <target href="t1r-t4i-impl.xmi#//@devices.0"/>
-  </correspondences>
-  <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
-    <source href="t1r-t4i-req.xmi#//@agents.2"/>
-    <target href="t1r-t4i-impl.xmi#//@devices.1"/>
   </correspondences>
   <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
     <source href="t1r-t4i-req.xmi#//@agents.0"/>
