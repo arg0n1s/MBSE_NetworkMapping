@@ -2,6 +2,8 @@ package UI;
 
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
+import org.osgi.framework.Bundle;
+import org.osgi.framework.BundleContext;
 
 import Models.ModelLoader;
 import TGG.ReqToImpTransformatorCorr;
@@ -11,7 +13,10 @@ import org.eclipse.swt.widgets.List;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FilenameFilter;
+import java.io.InputStream;
+import java.net.URI;
 import java.util.HashMap;
+import java.util.Properties;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Button;
@@ -22,6 +27,7 @@ import org.eclipse.swt.graphics.ImageData;
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.widgets.Canvas;
 import org.eclipse.swt.custom.StyledText;
+import org.eclipse.core.runtime.adaptor.EclipseStarter;
 import org.eclipse.jface.text.TextViewer;
 
 public class MainWindow {
@@ -160,8 +166,21 @@ public class MainWindow {
 		btnFindMapping.setBounds(10, 36, 110, 28);
 		btnFindMapping.setText("Find Mapping");
 		
-		
-		
+		/*
+		System.out.println(org.eclipse.core.runtime.adaptor.EclipseStarter.isRunning());
+		try {
+			String[] equinoxArgs = {"-console","1234","-noExit"};
+			BundleContext context = EclipseStarter.startup(equinoxArgs,null);
+			InputStream is = new FileInputStream("xtr+e.jar");
+			Bundle bundle = context.installBundle("xtr+e.jar", is);
+			bundle.start();
+			
+		} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		System.out.println(org.eclipse.core.runtime.adaptor.EclipseStarter.isRunning());
+		*/
 		
 
 	}

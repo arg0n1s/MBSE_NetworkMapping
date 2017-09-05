@@ -57,9 +57,16 @@ public abstract class Model {
 	public byte[] getDotGraph(){
 		return dotGraph.getGraph(dotGraph.getDotSource(), "png", "dot");
 	}
+	public byte[] getDotGraphSVG(){
+		return dotGraph.getGraph(dotGraph.getDotSource(), "svg", "dot");
+	}
 	
 	public void writeGraphToFile(String path){
 		dotGraph.writeGraphToFile(getDotGraph(), path);
+	}
+	
+	public void writeGraphToSVG(String path){
+		dotGraph.writeGraphToFile(getDotGraphSVG(), path);
 	}
 	
 	public File getFile(){

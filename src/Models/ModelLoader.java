@@ -75,6 +75,7 @@ public class ModelLoader {
 				modelFiles.remove(implMapped);
 				String path = models.get(current).getFile().getCanonicalPath();
 				saveGraphAsPNG(path.substring(0, path.length()-4)+".png",models.get(current));
+				saveGraphAsPNG(path.substring(0, path.length()-4)+".svg",models.get(current));
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -90,6 +91,7 @@ public class ModelLoader {
 			try {
 				models.put(file.getName(), new ImplementationModel(file));
 				saveGraphAsPNG(file.getCanonicalPath().substring(0, file.getCanonicalPath().length()-4)+".png",models.get(file.getName()));
+				saveGraphAsSVG(file.getCanonicalPath().substring(0, file.getCanonicalPath().length()-4)+".svg",models.get(file.getName()));
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -98,6 +100,7 @@ public class ModelLoader {
 			try {
 				models.put(file.getName(), new RequirementsModel(file));
 				saveGraphAsPNG(file.getCanonicalPath().substring(0, file.getCanonicalPath().length()-4)+".png",models.get(file.getName()));
+				saveGraphAsSVG(file.getCanonicalPath().substring(0, file.getCanonicalPath().length()-4)+".svg",models.get(file.getName()));
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -184,6 +187,10 @@ public class ModelLoader {
 	
 	public void saveGraphAsPNG(String path, Model model){
 		model.writeGraphToFile(path);
+	}
+	
+	public void saveGraphAsSVG(String path, Model model){
+		model.writeGraphToSVG(path);
 	}
 	
 	public byte[] getGraphOfModel(String model){
