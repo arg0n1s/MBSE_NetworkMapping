@@ -1,34 +1,25 @@
 package UI;
 
 import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.BundleContext;
-
 import Models.ModelLoader;
 import TGG.ReqToImpTransformatorCorr;
 
 import org.eclipse.swt.widgets.List;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FilenameFilter;
-import java.io.InputStream;
-import java.net.URI;
-import java.util.HashMap;
-import java.util.Properties;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.graphics.Image;
-import org.eclipse.swt.graphics.ImageData;
-import org.eclipse.swt.graphics.Point;
-import org.eclipse.swt.widgets.Canvas;
 import org.eclipse.swt.custom.StyledText;
-import org.eclipse.core.runtime.adaptor.EclipseStarter;
 import org.eclipse.jface.text.TextViewer;
+import org.eclipse.swt.custom.ScrolledComposite;
 
 public class MainWindow {
 
@@ -51,7 +42,8 @@ public class MainWindow {
 	
 	public MainWindow(){
 		models = new ModelLoader();
-		models.loadModelsDefaultPath();
+		//models.loadModelsDefaultPath();
+		models.loadModelFilesDefaultPath();
 		correlation = new ReqToImpTransformatorCorr();
 	}
 
@@ -75,11 +67,14 @@ public class MainWindow {
 	 */
 	protected void createContents() {
 		shlNetworkMapping = new Shell();
-		shlNetworkMapping.setSize(600, 480);
+		shlNetworkMapping.setSize(800, 600);
 		shlNetworkMapping.setText("Network Mapping");
 		
-		Canvas graphView = new Canvas(shlNetworkMapping, SWT.NONE);
-		graphView.setBounds(134, 109, 280, 296);
+		ScrolledComposite scrolledComposite = new ScrolledComposite(shlNetworkMapping, SWT.BORDER | SWT.H_SCROLL | SWT.V_SCROLL);
+		scrolledComposite.setAlwaysShowScrollBars(true);
+		scrolledComposite.setBounds(134, 109, 656, 459);
+		scrolledComposite.setExpandHorizontal(true);
+		scrolledComposite.setExpandVertical(true);
 		
 		TextViewer textSource = new TextViewer(shlNetworkMapping, SWT.BORDER);
 		StyledText sourcePath = textSource.getTextWidget();
@@ -99,13 +94,17 @@ public class MainWindow {
 		list.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e){
-				Image im = new Image(shlNetworkMapping.getDisplay(),models.loadGraphFromPNG(list.getItem(list.getFocusIndex())));
-				graphView.setBackgroundImage(im);
-				Point loc = graphView.getLocation();
-				graphView.setBounds(im.getBounds());
-				graphView.setLocation(loc);
-				Point size = shlNetworkMapping.computeSize(SWT.DEFAULT, SWT.DEFAULT);
-				shlNetworkMapping.setSize(size);
+				Image im = null;
+				try {
+					im = new Image(shlNetworkMapping.getDisplay(), models.getModelPNGFileInputStream(list.getItem(list.getFocusIndex())));
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				Label label = new Label( scrolledComposite, SWT.NONE );
+				label.setImage( im );
+				scrolledComposite.setContent( label );
+				scrolledComposite.setMinSize(im.getBoundsInPixels().width, im.getBoundsInPixels().height);
 			}
 		});
 		
@@ -113,7 +112,7 @@ public class MainWindow {
 		btnLoadModels.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				models.loadModelsDefaultPath();
+				models.loadModelFilesDefaultPath();
 				list.removeAll();
 				for(String model : models.getModelNames()){
 					list.add(model);
@@ -128,8 +127,13 @@ public class MainWindow {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				String srcItem = list.getItem(list.getFocusIndex());
-				if(models.getModel(srcItem).isInstanceOf("RequirementsModel")){
-					sourcePath.setText(list.getItem(list.getFocusIndex()));
+				try {
+					if(models.getModel(srcItem).isInstanceOf("RequirementsModel")){
+						sourcePath.setText(list.getItem(list.getFocusIndex()));
+					}
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
 				}
 			}
 		});
@@ -141,8 +145,13 @@ public class MainWindow {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				String trgItem = list.getItem(list.getFocusIndex());
-				if(models.getModel(trgItem).isInstanceOf("ImplementationModel")){
-					targetPath.setText(list.getItem(list.getFocusIndex()));
+				try {
+					if(models.getModel(trgItem).isInstanceOf("ImplementationModel")){
+						targetPath.setText(list.getItem(list.getFocusIndex()));
+					}
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
 				}
 			}
 		});
@@ -153,8 +162,8 @@ public class MainWindow {
 		btnFindMapping.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				File src = models.getModelFiles().get(sourcePath.getText().toString());
-				File trg = models.getModelFiles().get(targetPath.getText().toString());
+				File src = models.getModelFile(sourcePath.getText().toString());
+				File trg = models.getModelFile(targetPath.getText().toString());
 				try {
 					correlation.runCorrelation(src, trg);
 				} catch (Exception e1) {
@@ -165,6 +174,8 @@ public class MainWindow {
 		});
 		btnFindMapping.setBounds(10, 36, 110, 28);
 		btnFindMapping.setText("Find Mapping");
+		
+		
 		
 		/*
 		System.out.println(org.eclipse.core.runtime.adaptor.EclipseStarter.isRunning());

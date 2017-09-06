@@ -12,19 +12,18 @@ public class ReqToImpTransformatorCorr extends SynchronizationHelper {
 
 	public ReqToImpTransformatorCorr() {
 		super(ReqToImpTransformatorPackage.eINSTANCE, ".");
+		// Set up logging
+        BasicConfigurator.configure();
 	}
 	
 	public void runCorrelation(File srcPath, File trgPath) throws Exception{
-		// Set up logging
-        BasicConfigurator.configure();
-
-        this.loadSrc("Models/"+srcPath.getName());
-		this.loadTrg("Models/"+trgPath.getName());
+		
+        this.loadSrc("/Users/Basti/Documents/MBSE/ReqToImpTransformator/instances/src.xmi");
+		this.loadTrg("/Users/Basti/Documents/MBSE/ReqToImpTransformator/instances/trg.xmi");
 
 		this.setUserDefiendILPConstraintProvider(new CorrILPConstraintProvider());
 		this.setUserDefiendILPObjectiveProvider(new CustomILPObjectiveProvider());
 		this.createCorrespondences(true);
-		
 		
 		//src and trg models are modified when preparing deltas.
 		//save all files in a separate location

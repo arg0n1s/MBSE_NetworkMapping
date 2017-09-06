@@ -36,9 +36,6 @@ Require-Bundle: ReqToImpTransformator;bundle-version="1.0.0",
  SDMLanguage,
  org.moflon.tgg.language,
  org.moflon.tgg.runtime,
- mbse_metamodels;bundle-version="1.0.0",
- org.eclipse.swt;bundle-version="3.105.3",
- org.eclipse.jface.text;bundle-version="3.11.2",
- trove-gnu;bundle-version="1.0.0"
+ mbse_metamodels;bundle-version="1.0.0"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
