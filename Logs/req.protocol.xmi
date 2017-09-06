@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.moflon.tgg.runtime:PrecedenceStructure xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.moflon.tgg.runtime="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore">
+  <tripleMatches children="//@tripleMatches.6 //@tripleMatches.5 //@tripleMatches.4 //@tripleMatches.3 //@tripleMatches.2 //@tripleMatches.1" ruleName="XContainerToContainerRule" number="210">
+    <sourceElements href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    <nodeMappings nodeName="container">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainerToContainer">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="virtualNode">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@networkSpan"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="networkSpan">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+      <trg href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@networkSpan"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+      <trg href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    </containedEdges>
+    <targetElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    <targetElements href="#//@tripleMatches.0/@containedEdges.0"/>
+    <targetElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@networkSpan"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.1"/>
+    <correspondenceElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.2"/>
+    <createdElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    <createdElements href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.0"/>
+    <createdElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@networkSpan"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.1"/>
+    <createdElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.2"/>
+  </tripleMatches>
+  <tripleMatches ruleName="XConsumerToConsumerRule" number="211">
+    <sourceElements href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.6"/>
+    <sourceElements href="platform:/resource/ImplementationModels/req.xmi#//@agents.4"/>
+    <contextElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    <contextElements href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.0"/>
+    <contextElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <nodeMappings nodeName="container">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xAgentToAgent">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="agent">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xAgent">
+      <node href="platform:/resource/ImplementationModels/req.xmi#//@agents.4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainerToContainer">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+      <trg href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="platform:/resource/ImplementationModels/req.xmi#/"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#//@agents.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+      <trg href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.1"/>
+      <trg href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.1"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#//@agents.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="platform:/resource/ImplementationModels/req.xmi#/"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#//@agents.4"/>
+    </containedEdges>
+    <targetElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    <targetElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.0"/>
+    <targetElements href="#//@tripleMatches.1/@containedEdges.3"/>
+    <correspondenceElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.1"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.0"/>
+    <correspondenceElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.4"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.5"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.2"/>
+    <createdElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.1"/>
+    <createdElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.0"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.3"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.4"/>
+    <createdElements href="platform:/resource/ImplementationModels/req.xmi#//@agents.4"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.5"/>
+  </tripleMatches>
+  <tripleMatches ruleName="XProviderToProviderRule" number="212">
+    <sourceElements href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.6"/>
+    <sourceElements href="platform:/resource/ImplementationModels/req.xmi#//@agents.2"/>
+    <contextElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    <contextElements href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <contextElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <nodeMappings nodeName="container">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xAgentToAgent">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="agent">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xAgent">
+      <node href="platform:/resource/ImplementationModels/req.xmi#//@agents.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainerToContainer">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+      <trg href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="platform:/resource/ImplementationModels/req.xmi#/"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#//@agents.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.2"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#//@agents.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+      <trg href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.2"/>
+      <trg href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="platform:/resource/ImplementationModels/req.xmi#/"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#//@agents.2"/>
+    </containedEdges>
+    <targetElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.4"/>
+    <targetElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.1"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <correspondenceElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <correspondenceElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.2"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.2"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.4"/>
+    <createdElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.1"/>
+    <createdElements href="platform:/resource/ImplementationModels/req.xmi#//@agents.2"/>
+    <createdElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.2"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.5"/>
+  </tripleMatches>
+  <tripleMatches ruleName="XProviderToProviderRule" number="213">
+    <sourceElements href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.6"/>
+    <sourceElements href="platform:/resource/ImplementationModels/req.xmi#//@agents.1"/>
+    <contextElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    <contextElements href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.0"/>
+    <contextElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.1"/>
+    <nodeMappings nodeName="container">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xAgentToAgent">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="agent">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xAgent">
+      <node href="platform:/resource/ImplementationModels/req.xmi#//@agents.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainerToContainer">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+      <trg href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="platform:/resource/ImplementationModels/req.xmi#/"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#//@agents.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.3"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#//@agents.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.3"/>
+      <trg href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+      <trg href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="platform:/resource/ImplementationModels/req.xmi#/"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#//@agents.1"/>
+    </containedEdges>
+    <targetElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    <targetElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.2"/>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.5"/>
+    <correspondenceElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.3"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.0"/>
+    <correspondenceElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.4"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.1"/>
+    <createdElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.3"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.2"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.3"/>
+    <createdElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.2"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.5"/>
+    <createdElements href="platform:/resource/ImplementationModels/req.xmi#//@agents.1"/>
+  </tripleMatches>
+  <tripleMatches ruleName="XConsumerToConsumerRule" number="214">
+    <sourceElements href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.6"/>
+    <sourceElements href="platform:/resource/ImplementationModels/req.xmi#//@agents.3"/>
+    <contextElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    <contextElements href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.0"/>
+    <contextElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.1"/>
+    <nodeMappings nodeName="container">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xAgentToAgent">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="agent">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xAgent">
+      <node href="platform:/resource/ImplementationModels/req.xmi#//@agents.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainerToContainer">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+      <trg href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+      <trg href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.4"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#//@agents.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="platform:/resource/ImplementationModels/req.xmi#/"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#//@agents.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.4"/>
+      <trg href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="platform:/resource/ImplementationModels/req.xmi#/"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#//@agents.3"/>
+    </containedEdges>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.2"/>
+    <targetElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    <targetElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.3"/>
+    <correspondenceElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.4"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.0"/>
+    <correspondenceElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.5"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.1"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.2"/>
+    <createdElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.4"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.3"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.4"/>
+    <createdElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.3"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.5"/>
+    <createdElements href="platform:/resource/ImplementationModels/req.xmi#//@agents.3"/>
+  </tripleMatches>
+  <tripleMatches ruleName="XConsumerToConsumerRule" number="215">
+    <sourceElements href="platform:/resource/ImplementationModels/req.xmi#//@agents.5"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.6"/>
+    <sourceElements href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    <contextElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    <contextElements href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.0"/>
+    <contextElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.1"/>
+    <nodeMappings nodeName="container">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xAgentToAgent">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="agent">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xAgent">
+      <node href="platform:/resource/ImplementationModels/req.xmi#//@agents.5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainerToContainer">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+      <trg href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="platform:/resource/ImplementationModels/req.xmi#/"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#//@agents.5"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+      <trg href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.5"/>
+      <trg href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.5"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#//@agents.5"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="platform:/resource/ImplementationModels/req.xmi#/"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#//@agents.5"/>
+    </containedEdges>
+    <targetElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    <targetElements href="#//@tripleMatches.5/@containedEdges.3"/>
+    <targetElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.4"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.0"/>
+    <correspondenceElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.5"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.4"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.5"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.1"/>
+    <createdElements href="platform:/resource/ImplementationModels/req.xmi#//@agents.5"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.2"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.3"/>
+    <createdElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.5"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.4"/>
+    <createdElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.4"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.5"/>
+  </tripleMatches>
+  <tripleMatches ruleName="XProviderToProviderRule" number="216">
+    <sourceElements href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.6"/>
+    <sourceElements href="platform:/resource/ImplementationModels/req.xmi#//@agents.0"/>
+    <contextElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    <contextElements href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.0"/>
+    <contextElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.1"/>
+    <nodeMappings nodeName="container">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xAgentToAgent">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.6"/>
+    </nodeMappings>
+    <nodeMappings nodeName="agent">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xAgent">
+      <node href="platform:/resource/ImplementationModels/req.xmi#//@agents.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainerToContainer">
+      <node href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+      <trg href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+      <trg href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.5"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.6"/>
+      <trg href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.5"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="platform:/resource/ImplementationModels/req.xmi#/"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#//@agents.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.6"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#//@agents.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="platform:/resource/ImplementationModels/req.xmi#/"/>
+      <trg href="platform:/resource/ImplementationModels/req.xmi#//@agents.0"/>
+    </containedEdges>
+    <targetElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#/"/>
+    <targetElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.5"/>
+    <targetElements href="#//@tripleMatches.6/@containedEdges.2"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.0"/>
+    <correspondenceElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.1"/>
+    <correspondenceElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.6"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.5"/>
+    <createdElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Models/req.xmi#//@agents.5"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.2"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.3"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.4"/>
+    <createdElements href="platform:/resource/ImplementationModels/req.xmi#//@agents.0"/>
+    <createdElements href="file:/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/N/MBSE_NetworkMapping/Logs/req.corr.xmi#//@correspondences.6"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.5"/>
+  </tripleMatches>
+</org.moflon.tgg.runtime:PrecedenceStructure>

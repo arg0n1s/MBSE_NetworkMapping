@@ -8,12 +8,16 @@
     <source href="t1r-t5i-req.xmi#//@networkSpan"/>
     <target href="t1r-t5i-impl.xmi#//@devices.2"/>
   </correspondences>
+  <correspondences xsi:type="ReqToImpTransformator:VirtualNodeToServer">
+    <source href="t1r-t5i-req.xmi#//@networkSpan"/>
+    <target href="t1r-t5i-impl.xmi#//@devices.0"/>
+  </correspondences>
   <correspondences xsi:type="ReqToImpTransformator:VirtualNodeToComputer">
     <source href="t1r-t5i-req.xmi#//@networkSpan"/>
     <target href="t1r-t5i-impl.xmi#//@devices.1"/>
   </correspondences>
-  <correspondences xsi:type="ReqToImpTransformator:VirtualNodeToServer">
-    <source href="t1r-t5i-req.xmi#//@networkSpan"/>
+  <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
+    <source href="t1r-t5i-req.xmi#//@agents.0"/>
     <target href="t1r-t5i-impl.xmi#//@devices.0"/>
   </correspondences>
   <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
@@ -25,19 +29,15 @@
     <target href="t1r-t5i-impl.xmi#//@devices.0"/>
   </correspondences>
   <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
-    <source href="t1r-t5i-req.xmi#//@agents.0"/>
-    <target href="t1r-t5i-impl.xmi#//@devices.0"/>
-  </correspondences>
-  <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
-    <source href="t1r-t5i-req.xmi#//@agents.2"/>
-    <target href="t1r-t5i-impl.xmi#//@devices.1"/>
-  </correspondences>
-  <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
     <source href="t1r-t5i-req.xmi#//@agents.5"/>
     <target href="t1r-t5i-impl.xmi#//@devices.1"/>
   </correspondences>
   <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
     <source href="t1r-t5i-req.xmi#//@agents.3"/>
+    <target href="t1r-t5i-impl.xmi#//@devices.1"/>
+  </correspondences>
+  <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
+    <source href="t1r-t5i-req.xmi#//@agents.2"/>
     <target href="t1r-t5i-impl.xmi#//@devices.1"/>
   </correspondences>
   <source href="t1r-t5i-req.xmi#/"/>
