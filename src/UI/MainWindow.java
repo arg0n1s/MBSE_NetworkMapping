@@ -9,8 +9,6 @@ import TGG.ReqToImpTransformatorCorr;
 import org.eclipse.swt.widgets.List;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Button;
@@ -25,7 +23,6 @@ public class MainWindow {
 
 	protected Shell shlNetworkMapping;
 	private ModelLoader models;
-	private ReqToImpTransformatorCorr correlation;
 
 	/**
 	 * Launch the application.
@@ -42,9 +39,7 @@ public class MainWindow {
 	
 	public MainWindow(){
 		models = new ModelLoader();
-		//models.loadModelsDefaultPath();
 		models.loadModelFilesDefaultPath();
-		correlation = new ReqToImpTransformatorCorr();
 	}
 
 	/**
@@ -164,35 +159,55 @@ public class MainWindow {
 			public void widgetSelected(SelectionEvent e) {
 				File src = models.getModelFile(sourcePath.getText().toString());
 				File trg = models.getModelFile(targetPath.getText().toString());
-				try {
-					correlation.runCorrelation(src, trg);
-				} catch (Exception e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
+				if(src != null && trg != null){
+					try {
+						ReqToImpTransformatorCorr.runCorrelation(src, trg);
+					} catch (Exception e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
 				}
+				
 			}
 		});
 		btnFindMapping.setBounds(10, 36, 110, 28);
 		btnFindMapping.setText("Find Mapping");
 		
+		Button btnSafeToPNGButton = new Button(shlNetworkMapping, SWT.NONE);
+		btnSafeToPNGButton.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				String selection = list.getItem(list.getFocusIndex());
+				if(selection != null){
+					try {
+						models.saveModelToPNG(selection);
+					} catch (Exception e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+				}
+			}
+		});
+		btnSafeToPNGButton.setBounds(10, 411, 110, 33);
+		btnSafeToPNGButton.setText("Selection to \nPNG");
 		
+		Button btnSafeToSVGButton = new Button(shlNetworkMapping, SWT.NONE);
+		btnSafeToSVGButton.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				String selection = list.getItem(list.getFocusIndex());
+				if(selection != null){
+					try {
+						models.saveModelToSVG(selection);
+					} catch (Exception e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+				}
+			}
+		});
+		btnSafeToSVGButton.setBounds(10, 441, 110, 33);
+		btnSafeToSVGButton.setText("Selection to \nSVG");
 		
-		/*
-		System.out.println(org.eclipse.core.runtime.adaptor.EclipseStarter.isRunning());
-		try {
-			String[] equinoxArgs = {"-console","1234","-noExit"};
-			BundleContext context = EclipseStarter.startup(equinoxArgs,null);
-			InputStream is = new FileInputStream("xtr+e.jar");
-			Bundle bundle = context.installBundle("xtr+e.jar", is);
-			bundle.start();
-			
-		} catch (Exception e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-		System.out.println(org.eclipse.core.runtime.adaptor.EclipseStarter.isRunning());
-		*/
-		
-
 	}
 }

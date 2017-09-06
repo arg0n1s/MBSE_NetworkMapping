@@ -61,11 +61,11 @@ public abstract class Model {
 		return dotGraph.getGraph(dotGraph.getDotSource(), "svg", "dot");
 	}
 	
-	public void writeGraphToFile(String path){
+	public void writeGraphToFile(String path) throws Exception{
 		dotGraph.writeGraphToFile(getDotGraph(), path);
 	}
 	
-	public void writeGraphToSVG(String path){
+	public void writeGraphToSVG(String path) throws Exception{
 		dotGraph.writeGraphToFile(getDotGraphSVG(), path);
 	}
 	

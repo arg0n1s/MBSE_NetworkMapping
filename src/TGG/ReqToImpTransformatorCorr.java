@@ -12,27 +12,28 @@ public class ReqToImpTransformatorCorr extends SynchronizationHelper {
 
 	public ReqToImpTransformatorCorr() {
 		super(ReqToImpTransformatorPackage.eINSTANCE, ".");
-		// Set up logging
-        BasicConfigurator.configure();
 	}
 	
-	public void runCorrelation(File srcPath, File trgPath) throws Exception{
+	public static void runCorrelation(File srcPath, File trgPath) throws Exception{
+		// Set up logging
+        BasicConfigurator.configure();
+        ReqToImpTransformatorCorr helper = new ReqToImpTransformatorCorr();
 		
-        this.loadSrc("/Users/Basti/Documents/MBSE/ReqToImpTransformator/instances/src.xmi");
-		this.loadTrg("/Users/Basti/Documents/MBSE/ReqToImpTransformator/instances/trg.xmi");
+        helper.loadSrc("Models/"+srcPath.getName());
+		helper.loadTrg("Models/"+trgPath.getName());
 
-		this.setUserDefiendILPConstraintProvider(new CorrILPConstraintProvider());
-		this.setUserDefiendILPObjectiveProvider(new CustomILPObjectiveProvider());
-		this.createCorrespondences(true);
+		helper.setUserDefiendILPConstraintProvider(new CorrILPConstraintProvider());
+		helper.setUserDefiendILPObjectiveProvider(new CustomILPObjectiveProvider());
+		helper.createCorrespondences(true);
 		
 		//src and trg models are modified when preparing deltas.
 		//save all files in a separate location
 		String srcName = srcPath.getName().substring(0, srcPath.getName().length()-4);
 		String trgName = trgPath.getName().substring(0, trgPath.getName().length()-4);
-		this.saveSrc("Correlations/"+srcName+"-"+trgName+"-req.xmi");
-		this.saveTrg("Correlations/"+srcName+"-"+trgName+"-impl.xmi");
-		this.saveCorr("Correlations/"+srcName+"-"+trgName+"-corr.xmi");
-		this.saveConsistencyCheckProtocol("Correlations/"+srcName+"-"+trgName+"-protocol.xmi");
+		helper.saveSrc("Correlations/"+srcName+"-"+trgName+"-req.xmi");
+		helper.saveTrg("Correlations/"+srcName+"-"+trgName+"-impl.xmi");
+		helper.saveCorr("Correlations/"+srcName+"-"+trgName+"-corr.xmi");
+		helper.saveConsistencyCheckProtocol("Correlations/"+srcName+"-"+trgName+"-protocol.xmi");
 	}
 
 }
