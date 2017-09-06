@@ -9,16 +9,55 @@ import ReqToImpTransformator.ReqToImpTransformatorPackage;
 import ReqToImpTransformator.org.moflon.tie.CustomILPObjectiveProvider;
 
 public class ReqToImpTransformatorCorr extends SynchronizationHelper {
+	private final static String osName = System.getProperty("os.name").replaceAll("\\s","");
 
 	public ReqToImpTransformatorCorr() {
-		super(ReqToImpTransformatorPackage.eINSTANCE, ".");
+		super(ReqToImpTransformatorPackage.eINSTANCE, getPackagePath());
+	}
+	
+	public static String getPackagePath(){
+		String[] prop = System.getProperty("java.class.path").split(":");
+        String path = "";
+        for(String s : prop){
+        	if(s.contains("ReqToImpTransformator")){
+        		path = s;
+        		break;
+        	}
+        	
+        }
+        if(ReqToImpTransformatorCorr.osName.contains("Windows")){
+        	String[] pathSplit = path.split("\\");
+        	StringBuilder sb = new StringBuilder();
+        	for(String ps : pathSplit){
+        		if(ps.contains("ReqToImpTransformator")){
+        			sb.append(ps);
+        			break;
+        		}else{
+        			sb.append(ps+"\\");
+        		}
+        	}
+        	path = sb.toString();
+        }else{
+        	String[] pathSplit = path.split("/");
+        	StringBuilder sb = new StringBuilder();
+        	for(String ps : pathSplit){
+        		if(ps.contains("ReqToImpTransformator")){
+        			sb.append(ps);
+        			break;
+        		}else{
+        			sb.append(ps+"/");
+        		}
+        	}
+        	path = sb.toString();
+        }
+        return path;
 	}
 	
 	public static void runCorrelation(File srcPath, File trgPath) throws Exception{
 		// Set up logging
         BasicConfigurator.configure();
         ReqToImpTransformatorCorr helper = new ReqToImpTransformatorCorr();
-		
+        
         helper.loadSrc("Models/"+srcPath.getName());
 		helper.loadTrg("Models/"+trgPath.getName());
 
